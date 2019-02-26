@@ -1,6 +1,10 @@
 # angular-bootstrap-portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3 and uses following packages:
+[ngx-page-scroll-core](https://www.npmjs.com/package/ngx-page-scroll) version 6.0.0-beta.1
+[ngx-page-scroll](https://www.npmjs.com/package/ngx-page-scroll) version 6.0.0-beta.1 
+[font-awesome](https://www.npmjs.com/package/font-awesome) version 4.7.0
+[bootstrap-css-only](https://www.npmjs.com/package/bootstrap-css-only) version 4.2.1
 
 run:
 
@@ -8,10 +12,9 @@ npm install
 
 ng serve
 
-## Change the page outlook to your needs 
-
-Go trough the following files:
-src/styles.css ## for styling the page
+#Change the page outlook to your needs
+Go trough the following files: 
+src/styles.css ## for styling the page 
 assets/img/profilepic ## for changing the profile pictures
 assets/img/thumbnails  ## project pictures
 assets/img/header ## background cover image 

@@ -1,0 +1,104 @@
+<nav #headerNav class="navbar fixed-top navbar-expand-lg" id="headerNav">
+  <div class="container">
+    <div class="navbar-header">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a
+            rel="tooltip"
+            title="Connect on Linkedin"
+            data-placement="bottom"
+            href="#"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin fa-sm my-grow"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            rel="tooltip"
+            title="Star on GitHub"
+            data-placement="bottom"
+            href="#"
+            target="_blank"
+          >
+            <i class="fa fa-github fa-sm my-grow"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarToggler"
+      aria-controls="navbarTogglerDemo"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      (click)="isCollapsed = !isCollapsed"
+    >
+      <span [hidden]="!isCollapsed" class="fa fa-bars"></span>
+      <span [hidden]="isCollapsed" class="fa fa-times"></span>
+    </button>
+    <div
+      #navbarToggler
+      class="navbar collapse navbar-collapse"
+      id="navbarToggler"
+      [ngbCollapse]="isCollapsed"
+    >
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item my-button-animate">
+          <a
+            pageScroll
+            [ngClass]="currentSection == 'about' ? 'my-textcolor' : ''"
+            class="nav-link hvr-underline-from-center"
+            style="cursor: pointer;"
+            href="#about"
+            >ABOUT</a
+          >
+        </li>
+        <li class="nav-item my-button-animate">
+          <a
+            pageScroll
+            [ngClass]="currentSection == 'projects' ? 'my-textcolor' : ''"
+            class="nav-link hvr-underline-from-center"
+            style="cursor: pointer;"
+            href="#projects"
+            >PROJECTS</a
+          >
+        </li>
+        <li class="nav-item my-button-animate">
+          <a
+            pageScroll
+            [ngClass]="currentSection == 'footer' ? 'my-textcolor' : ''"
+            class="nav-link hvr-underline-from-center"
+            style="cursor: pointer;"
+            href="#footer"
+            >CONTACT</a
+          >
+        </li>
+      </ul>
+      <ul class="nav navbar-nav mr-auto"></ul>
+    </div>
+  </div>
+</nav>
+
+<header class="masthead text-center text-white d-flex">
+  <div class="container my-auto">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="text-uppercase">
+          <strong>Your name</strong>
+        </h1>
+        <hr />
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <h5 class="text-faded mb-5">
+          Job Title and Location
+        </h5>
+        <a class="btn text-white my-swing-down" pageScroll href="#about"
+          >FIND OUT MORE<i class="fa fa-angle-down fa-lg"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</header>

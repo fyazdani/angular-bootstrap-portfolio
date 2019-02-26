@@ -1,1 +1,473 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'node_modules/bootstrap-css-only/css/bootstrap.min.css';
+
+/* ---------Default settings Start */
+
+/* Section tag settings */
+section {
+  padding: 9rem 0;
+}
+.section-heading {
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 45px rgba(0, 0, 0, 0.2);
+  padding-top: 2rem;
+}
+.section-subheading {
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 45px rgba(0, 0, 0, 0.2);
+}
+/* my own styling */
+.my-nodisplay {
+  opacity: 0;
+}
+.my-textcolor {
+  color: #b17f4d !important;
+}
+.my-ul {
+  padding-inline-start: 20px;
+}
+.my-ul > li {
+  padding-bottom: 10px;
+}
+.my-bordercolor {
+  border-color: #222;
+}
+.my-2ntextcolor {
+  color: #222 !important;
+}
+.my-footerlinks {
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 1.5px;
+}
+.my-sociallinks > p > a {
+  color: #222;
+  font-weight: bold;
+}
+.my-footerlinks:hover,
+.my-sociallinks > a > i:hover,
+.my-sociallinks > p > a:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #b17f4d !important;
+  text-decoration: none;
+}
+.my-fsize {
+  font-size: 0.875em !important;
+}
+.my-ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  -webkit-padding-start: 0;
+}
+.my-highlights {
+  padding-inline-start: 20px;
+  -webkit-padding-start: 20px;
+}
+.my-highlights>li{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+/* -- Fonts -- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#main,
+#header {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+#headerNav {
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 1.5px;
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+}
+p,
+.fw5 {
+  font-weight: 500;
+}
+.fw1 {
+  font-weight: 100;
+}
+
+/* fa fonts (fontawesome) */
+.fa {
+  color: white;
+}
+.fa:hover,
+.my-swing-down:hover > i,
+.my-swing-down:hover {
+  color: #b17f4d !important;
+}
+button:focus {
+  outline: none !important;
+}
+
+/* General tag settings */
+hr {
+  border-top: 2px solid #b17f4d;
+}
+
+/* ProfilePic */
+.my-profilepic {
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  height: 128px;
+  width: 128px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+/* footer page */
+section.footer {
+  padding-top: 9rem 0;
+  padding-bottom: 0;
+}
+.footer {
+  background-color: #f9f9f9;
+  color: #222;
+}
+.copyright {
+  display: block;
+  text-align: center;
+  position: inherit;
+  padding-top: 9rem;
+  font-weight: 400;
+  font-size: small;
+}
+.my-profilepicsmall {
+  display: inline-block;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+}
+
+/* Project page */
+.img-fluid {
+  border: 5px solid #b17f4d;
+  border-radius: 4px;
+  padding: 5px;
+}
+#projects {
+  background: #222;
+}
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+}
+.portfolio-box .portfolio-box-caption {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: #b17f4d;
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+}
+.portfolio-box .portfolio-box-caption:hover {
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+  opacity: 1;
+  border: 5px solid #b17f4d;
+  border-radius: 4px; /* Rounded border */
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+.portfolio-box
+  .portfolio-box-caption
+  .portfolio-box-caption-content
+  .project-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.portfolio-box
+  .portfolio-box-caption
+  .portfolio-box-caption-content
+  .project-category,
+.portfolio-box
+  .portfolio-box-caption
+  .portfolio-box-caption-content
+  .project-name {
+  padding: 0 15px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* About page */
+#about {
+  background-color: #b17f4d !important;
+}
+
+/* cover page */
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url(/assets/img/header.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+header.masthead .fa-angle-down {
+  display: block;
+}
+
+/* --- Media setttings --- */
+
+/* Default settings for (landscape phones, 576px and up) start*/
+@media (min-width: 768px) {
+  /* cover Page */
+  header.masthead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+  #navbarToggler > ul > li a {
+    color: #f9f9f9;
+  }
+  #navbarToggler.navbar-active > ul > li a {
+    color: #222;
+  }
+  #headerNav.navbar-active .navbar-header .navbar-nav .nav-item > a .fa {
+    color: #222;
+  }
+  #headerNav.navbar-active {
+    background-color: #f9f9f9;
+    -webkit-transition: all 0.75s;
+    transition: all 0.75s;
+    -webkit-box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+/* Default settings for (landscape phones, 576px and up) end*/
+/* Default settings for Medium devices (tablets, 768px and up)end*/
+@media (min-width: 768px) {
+  .portfolio-box
+    .portfolio-box-caption
+    .portfolio-box-caption-content
+    .project-category {
+    font-size: 16px;
+  }
+}
+/* Default settings for Extra small devices (portrait phones, less than 576px) start */
+@media (max-width: 991.98px) {
+  #headerNav .navbar-header ul {
+    flex-direction: row !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  #headerNav {
+    background-color: #f9f9f9;
+    -webkit-box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.5);
+  }
+  #headerNav .navbar-header .navbar-nav .nav-item > a .fa {
+    color: black;
+  }
+  button.navbar-toggler .fa {
+    color: black;
+  }
+  button.navbar-toggler .fa-times:not(.hidden) {
+    color: #b17f4d;
+  }
+  #navbarToggler > ul > li > a {
+    color: #222;
+  }
+  #navbarToggler[ng-reflect-collapsed='false'] > ul {
+    text-align: center;
+  }
+  #navbarToggler[ng-reflect-collapsed='false'] {
+    margin-top: 8px;
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-bottom: -8px;
+  }
+  .section-subheading {
+    padding-top: 30px;
+  }
+  .my-nodisplay {
+    opacity: 1;
+  }
+  section {
+    padding: 6rem 0;
+  }
+}
+/* Default settings for Extra small devices (portrait phones, less than 576px) end */
+
+/* Bootstrap settings */
+.navbar-header .navbar-nav .nav-item {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Default settings End ---------------*/
+
+/* Animations */
+
+/* own animations */
+
+.my-button-animate {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.my-button-animate:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.my-button-animate:hover > a {
+  opacity: 1;
+  color: #b17f4d !important;
+  transition: all 0.3s ease-in-out 1ms;
+}
+
+/* GROW */
+.my-grow {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+}
+.my-grow:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+/* animate text left to right */
+@-webkit-keyframes animateleft {
+  from {
+    -webkit-transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes animateleft {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.my-animate-left {
+  position: relative;
+  animation: animateleft 0.75s;
+  overflow: hidden;
+  display: block;
+}
+/* animate text right to left */
+@-webkit-keyframes animateright {
+  from {
+    -webkit-transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes animateright {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.my-animate-right {
+  position: relative;
+  animation: animateright 0.75s;
+  overflow: hidden;
+  display: block;
+}
+
+/* Animate swingDown */
+@-webkit-keyframes swingDown {
+  15% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  30% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  65% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  80% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes swingDown {
+  15% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  30% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  65% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  80% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.my-swing-down:hover {
+  -webkit-animation: swingDown 1s ease;
+  animation: swingDown 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}

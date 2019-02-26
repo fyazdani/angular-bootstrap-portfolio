@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'fyazdani-portfolio';
+  title = 'angular-bootstrap-portfolio';
+  currentSection = '';
+  onSectionChange(sectionId: string) {
+    this.currentSection = sectionId;
+  }
 }

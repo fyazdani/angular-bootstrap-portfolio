@@ -1,0 +1,10 @@
+<div
+  scrollSpy
+  [spiedTags]="['SECTION']"
+  (sectionChange)="onSectionChange($event)"
+  (sectionAnimateChange)="onSectionAnimationChange($event)"
+>
+  <app-about [currentAnimateSection]="sectionAnimationId"></app-about>
+  <app-projects [currentAnimateSection]="sectionAnimationId"></app-projects>
+  <app-footer></app-footer>
+</div>

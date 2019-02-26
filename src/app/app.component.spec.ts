@@ -13,15 +13,15 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have as title 'fyazdani-portfolio'`, async(() => {
+  it(`should have as title 'angular-bootstrap-portfolio'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('fyazdani-portfolio');
+    expect(app.title).toEqual('angular-bootstrap-portfolio');
   }));
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to fyazdani-portfolio!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-bootstrap-portfolio!');
   }));
 });
