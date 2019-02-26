@@ -9,7 +9,7 @@ export class MainComponent implements OnInit {
   @Output() public sectionChange = new EventEmitter<string>();
   @Output() public sectionAnimateChange = new EventEmitter<string>();
   private sectionId = '';
-  private sectionAnimationId = '';
+  sectionAnimationId = '';
   constructor() {}
 
   ngOnInit() {}
