@@ -1,6 +1,21 @@
-# FyazdaniPortfolio
+# angular-bootstrap-portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+
+run:
+
+npm install
+
+ng serve
+
+## Change the page outlook to your needs 
+
+Go trough the following files:
+src/styles.css ## for styling the page
+assets/img/profilepic ## for changing the profile pictures
+assets/img/thumbnails  ## project pictures
+assets/img/header ## background cover image 
+
 
 ## Development server
 
